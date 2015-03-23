@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'rails_admin', '~> 0.6.7'
+gem 'comfortable_mexican_sofa', '~> 1.12.7'
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
