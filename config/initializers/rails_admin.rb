@@ -1,5 +1,4 @@
 RailsAdmin.config do |config|
-
   ### Popular gems integration
 
   ## == Devise ==
@@ -32,9 +31,7 @@ RailsAdmin.config do |config|
     # history_show
   end
 
-  config.authorize_with do |controller|
-    unless  current_user.try(:admin?)
-      redirect_to '/'
-    end
+  config.authorize_with do 
+    redirect_to '/' unless  current_user.try(:admin?)
   end
 end

@@ -1,5 +1,13 @@
 Metrics/LineLength:
   Max: 150
+Style/Documentation:
+  Enabled: false
+Style/TrailingWhitespace:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 30
+Metrics/ClassLength:
+  Max: 200
 AllCops:
   RunRailsCops: true
   Include:
@@ -9,4 +17,12 @@ AllCops:
    - 'bin/*'
    - 'db/seeds.rb'
    - 'db/schema.rb'
+   - 'db/*_create_cms.rb'
+   - 'db/*_devise_create_users.rb'
+   - 'config/initializers/simple_form_bootstrap.rb'
+   - 'config/initializers/devise.rb'
+   - 'config/initializers/simple_form.rb'
+   - 'config/application.rb'
+   - 'spec/spec_helper.rb'
+   - 'spec/support/database_cleaner.rb'
    - 'vendor/bundle/**/*'

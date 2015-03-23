@@ -1,11 +1,9 @@
 # encoding: utf-8
 
 ComfortableMexicanSofa.configure do |config|
-   module CmsDeviseAuth
+  module CmsDeviseAuth
     def authenticate
-      unless  current_user.try(:admin?)
-      redirect_to '/'
-      end
+      redirect_to '/' unless  current_user.try(:admin?)      
     end
   end
   # Title of the admin area
@@ -16,7 +14,7 @@ ComfortableMexicanSofa.configure do |config|
 
   # Module responsible for authentication. You can replace it with your own.
   # It simply needs to have #authenticate method. See http_auth.rb for reference.
-      config.admin_auth = 'CmsDeviseAuth'
+  config.admin_auth = 'CmsDeviseAuth'
 
   # Module responsible for authorization on admin side. It should have #authorize
   # method that returns true or false based on params and loaded instance
@@ -66,7 +64,7 @@ ComfortableMexicanSofa.configure do |config|
 
   # Locale definitions. If you want to define your own locale merge
   # {:locale => 'Locale Title'} with this.
-  #   config.locales = {:en => 'English', :es => 'Español'}
+  #   config.locales = {:en => 'English'}
 
   # Admin interface will respect the locale of the site being managed. However you can
   # force it to English by setting this to `:en`
@@ -98,7 +96,6 @@ ComfortableMexicanSofa.configure do |config|
   # Reveal partials that can be overwritten in the admin area.
   # Default is false.
   #   config.reveal_cms_partials = false
-
 end
 
 # Default credentials for ComfortableMexicanSofa::AccessControl::AdminAuthentication
