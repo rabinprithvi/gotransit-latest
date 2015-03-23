@@ -1,0 +1,98 @@
+/*--------------- Bootstrap CSS Changes------------- */
+.navbar-default {
+    border: medium none;
+    min-height: 40px;
+    background-color: #FFFFFF;
+}
+
+.multi-bg-color {
+    background: #4E4F54; /* Old browsers */
+    background: -moz-linear-gradient(left,  #4E4F54 0%, #4E4F54 50%, #FFF 50%, #FFF 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#4E4F54), color-stop(50%,#4E4F54), color-stop(50%,#FFF), color-stop(100%,#FFF)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #4E4F54 0%,#4E4F54 50%,#FFF 50%,#FFF 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #4E4F54 0%,#4E4F54 50%,#FFF 50%,#FFF 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #4E4F54 0%,#4E4F54 50%,#FFF 50%,#FFF 100%); /* IE10+ */
+    background: linear-gradient(to right,  #4E4F54 0%,#4E4F54 50%,#FFF 50%,#FFF 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4E4F54', endColorstr='#FFF',GradientType=1 ); /* IE6-9 */
+}
+
+.cross-seperator {
+    font-size: 0px;
+    line-height: 0%;
+    width: 0px;
+    border-top: 40px solid #4E4F54;
+    border-bottom: none;
+    border-right: 20px solid #FFF;
+    margin-right: -10px;
+    margin-top: -30px;
+}
+
+/*---------------Home Slider------------- */
+.carousel-inner {
+    height: 600px;
+}
+
+.carousel {
+    height: 600px;
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+/*--------------- Navbar CSS ------------*/
+.top-left-nav-bar {
+    width: 70%;
+    height: 40px;
+    background-color: #4E4F54;
+}
+
+.top-right-nav-bar {
+    width: 30%;
+    height: 40px;
+    background-color: #FFF;
+}
+.top-menu-content .col-md-2, .col-md-3 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.top-left-nav-bar a {
+    color: #FFF;
+    font-weight: bold;
+}
+
+.top-right-nav-bar a {
+    color: #E19523;
+    font-weight: bold;
+}
+
+.top-menu-content a:focus, a:hover {
+    text-decoration: none;
+}
+
+.logo {
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+
+.pad-rit-left-20 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.diagnal {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #e19523;
+    border: 3px solid #fff;
+    height: 60px;
+    margin-left: 25%;
+    margin-top: 55px;
+    position: absolute;
+    width: 60px;
+    z-index: 99;
+}

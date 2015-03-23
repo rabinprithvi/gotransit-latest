@@ -1,1 +1,57 @@
 <h3>Welcome</h3>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <div style="position: absolute; background-color: rgba(255,255,255, 0.7); z-index: 99; margin-left: 50px; margin-top: 50px; height: 400px; width: 350px;">
+        <h4 style="background-color: #EAE9E7; margin-top: 0px; padding: 10px;">Trip Planner</h4>
+        <div style="padding:15px">
+            <div class="form-group col-md-12">
+                <label for="exampleInputEmail1">From</label>
+                <input type="test" class="form-control" id="from" placeholder="">
+            </div>
+            <div class="form-group col-md-12">
+                <label for="exampleInputEmail1">To</label>
+                <input type="test" class="form-control" id="to" placeholder="">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="exampleInputEmail1">When</label>
+                <br>
+                <input type="radio"> Leave Now <br>
+                <input type="radio"> Depart At <br>
+                <input type="radio"> Arrive By
+            </div>
+            <div class="form-group col-md-6">
+                <label for="exampleInputEmail1">Date</label>
+                <br>
+                <input type="checkbox">
+                Leave Now
+                <br>
+                <input type="checkbox">
+                Depart At
+                <br>
+                <input type="checkbox">
+                Arrive By
+            </div>
+        </div>
+    </div>
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="/img/sliderImg/B1.jpg" alt="Chania" width="100%">
+        </div>
+        <div class="item ">
+            <img src="/img/sliderImg/B2.jpg" alt="Chania" width="100%">
+        </div>
+        <div class="item">
+            <img src="/img/sliderImg/B3.jpg" alt="Chania" width="100%">
+        </div>
+    </div>
+
+</div>
